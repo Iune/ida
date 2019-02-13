@@ -31,6 +31,15 @@ func (c Country) GetPrimaryName() string {
 	return ""
 }
 
+func GetCountry(countries []Country, name string) (country Country, found bool) {
+	for _, c := range countries {
+		if c.Find(name) {
+			return c, true
+		}
+	}
+	return Country{}, false
+}
+
 func LoadCountries(countryFilePath string) []Country {
 	csvFile, err := os.Open(countryFilePath)
 	if err != nil {
