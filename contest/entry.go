@@ -1,11 +1,7 @@
 package contest
 
-import (
-	"github.com/iune/ida/country"
-)
-
 type Entry struct {
-	Country country.Country
+	Country Country
 	Artist  string
 	Song    string
 }

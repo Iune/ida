@@ -1,4 +1,4 @@
-package country
+package contest
 
 import (
 	"bufio"

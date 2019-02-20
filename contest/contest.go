@@ -5,8 +5,6 @@ import (
 	"encoding/csv"
 	"log"
 	"os"
-
-	"github.com/iune/ida/country"
 )
 
 type Contest struct {
@@ -14,7 +12,7 @@ type Contest struct {
 	Voters  []string
 }
 
-func LoadContest(contestFilePath string, countries []country.Country) Contest {
+func LoadContest(contestFilePath string, countries []Country) Contest {
 	csvFile, err := os.Open(contestFilePath)
 	if err != nil {
 		log.Fatal(err)
@@ -43,10 +41,10 @@ func getVoters(csv [][]string) []string {
 	return voters
 }
 
-func getEntries(csv [][]string, countries []country.Country) []Entry {
+func getEntries(csv [][]string, countries []Country) []Entry {
 	var entries []Entry
 	for _, line := range csv[1:] {
-		country, found := country.GetCountry(countries, line[1])
+		country, found := GetCountry(countries, line[1])
 		if !found {
 			log.Fatalf("Could not find country %s in countries file", line[1])
 		}
