@@ -27,17 +27,25 @@ func LoadContest(contestFilePath string, countries []country.Country) Contest {
 		log.Fatal(err)
 	}
 
-	// Get list of voters
+	voters := getVoters(csvFileContents)
+	entries := getEntries(csvFileContents, countries)
+
+	return Contest{Entries: entries, Voters: voters}
+}
+
+func getVoters(csv [][]string) []string {
 	var voters []string
-	if len(csvFileContents[0]) >= 6 {
-		voters = csvFileContents[0][6:len(csvFileContents[0])]
+	if len(csv[0]) >= 6 {
+		voters = csv[0][6:len(csv[0])]
 	} else {
 		log.Fatal("No voters were defined in contest file")
 	}
+	return voters
+}
 
-	// Get list of entries
+func getEntries(csv [][]string, countries []country.Country) []Entry {
 	var entries []Entry
-	for _, line := range csvFileContents[1:] {
+	for _, line := range csv[1:] {
 		country, found := country.GetCountry(countries, line[1])
 		if !found {
 			log.Fatalf("Could not find country %s in countries file", line[1])
@@ -51,6 +59,5 @@ func LoadContest(contestFilePath string, countries []country.Country) Contest {
 			Song:    song,
 		})
 	}
-
-	return Contest{Entries: entries, Voters: voters}
+	return entries
 }
