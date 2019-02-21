@@ -20,7 +20,7 @@ type args struct {
 }
 
 func (args) Version() string {
-	return "ida 0.1.0"
+	return "ida 0.1.1"
 }
 
 func main() {
