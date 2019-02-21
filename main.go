@@ -6,6 +6,7 @@ import (
 	"os"
 	"strings"
 
+	"github.com/alexflint/go-arg"
 	"github.com/atotto/clipboard"
 
 	"github.com/iune/ida/contest"
@@ -15,12 +16,25 @@ import (
 )
 
 func main() {
+	// Argument parsing
+	var args struct {
+		Countries   string `arg:"positional" help:"Path to tab-separated file with country information"`
+		Spreadsheet string `arg:"positional" help:"Path to tab-separated contest file"`
+	}
+	arg.MustParse(&args)
+	if len(args.Countries) == 0 {
+		log.Fatal("Input file path for the countries file was empty")
+	}
+	if len(args.Spreadsheet) == 0 {
+		log.Fatal("Input file path for the contest file was empty")
+	}
+
 	// Set up logging
-	log.SetOutput(os.Stdout)
+	log.SetOutput(os.Stdin)
 	log.SetLevel(log.WarnLevel)
 
-	countries := contest.LoadCountries("countries.tsv")
-	contest := contest.LoadContest("1991.csv", countries)
+	countries := contest.LoadCountries(args.Countries)
+	contest := contest.LoadContest(args.Spreadsheet, countries)
 
 	repeat := true
 	for repeat {
