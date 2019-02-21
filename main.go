@@ -4,7 +4,6 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"strings"
 
 	"github.com/alexflint/go-arg"
 	"github.com/atotto/clipboard"
@@ -72,18 +71,5 @@ func main() {
 		results.PrintVotes(votes)
 		fmt.Println()
 
-		// Check to see if we should continue the loop
-		fmt.Print("Continue? (Y/N)\n> ")
-		input = bufio.NewScanner(os.Stdin)
-		input.Scan()
-		text := input.Text()
-		if err := input.Err(); err != nil {
-			log.Fatal(err)
-		}
-
-		if strings.ToLower(text) == "n" {
-			repeat = false
-		}
-		fmt.Println()
 	}
 }

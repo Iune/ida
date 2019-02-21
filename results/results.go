@@ -24,7 +24,6 @@ func Output(contest contest.Contest, votes []voting.Vote, voterName string) stri
 
 	// Add placeholder 'X' to voter entry, if present
 	voterEntry, found := contest.FindCountryByName(voterName)
-	fmt.Println(voterName, voterEntry)
 	if found {
 		// Check and warn if voter voted for self
 		voterVotedForSelf := checkIfVoterVotedForSelf(votes, voterEntry)
