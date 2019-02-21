@@ -47,15 +47,16 @@ func main() {
 	for repeat {
 		// Get voter name
 		fmt.Print("Country Name:\n> ")
-		input := bufio.NewScanner(os.Stdin)
-		voterName := input.Text()
-		if err := input.Err(); err != nil {
+		reader := bufio.NewReader(os.Stdin)
+		voterName, err := reader.ReadString('\n')
+		if err != nil {
 			log.Fatal(err)
 		}
+		fmt.Println(voterName)
 
 		// Read in votes from standard input
 		var lines []string
-		input = bufio.NewScanner(os.Stdin)
+		input := bufio.NewScanner(os.Stdin)
 		for input.Scan() {
 			lines = append(lines, input.Text())
 		}
@@ -76,11 +77,12 @@ func main() {
 		fmt.Print("Continue? (Y/N)\n> ")
 		input = bufio.NewScanner(os.Stdin)
 		input.Scan()
+		text := input.Text()
 		if err := input.Err(); err != nil {
 			log.Fatal(err)
 		}
+		fmt.Println(text)
 
-		text := input.Text()
 		if strings.ToLower(text) == "n" {
 			repeat = false
 		}
