@@ -5,11 +5,48 @@ import (
 	"encoding/csv"
 	"log"
 	"os"
+	"strings"
 )
 
 type Contest struct {
 	Entries []Entry
 	Voters  []string
+}
+
+func (c Contest) FindArtist(artist string) (entry Entry, found bool) {
+	for _, e := range c.Entries {
+		if strings.Contains(strings.ToLower(artist), strings.ToLower(e.Artist)) {
+			return e, true
+		}
+	}
+	return Entry{}, false
+}
+
+func (c Contest) FindSong(song string) (entry Entry, found bool) {
+	for _, e := range c.Entries {
+		if strings.Contains(strings.ToLower(song), strings.ToLower(e.Song)) {
+			return e, true
+		}
+	}
+	return Entry{}, false
+}
+
+func (c Contest) FindCountryByName(name string) (entry Entry, found bool) {
+	for _, e := range c.Entries {
+		if e.Country.Find(name) {
+			return e, true
+		}
+	}
+	return Entry{}, false
+}
+
+func (c Contest) FindCountryByForum(forum string) (entry Entry, found bool) {
+	for _, e := range c.Entries {
+		if strings.Contains(strings.ToLower(forum), strings.ToLower(e.Country.Forum)) {
+			return e, true
+		}
+	}
+	return Entry{}, false
 }
 
 func LoadContest(contestFilePath string, countries []Country) Contest {

@@ -17,7 +17,7 @@ type Country struct {
 
 func (c Country) Find(name string) bool {
 	for _, n := range c.Names {
-		if n == name {
+		if strings.Contains(strings.ToLower(name), strings.ToLower(n)) {
 			return true
 		}
 	}
