@@ -49,6 +49,15 @@ func (c Contest) FindCountryByForum(forum string) (entry Entry, found bool) {
 	return Entry{}, false
 }
 
+func (c Contest) GetEntryIndex(entry Entry) (index int, found bool) {
+	for idx, e := range c.Entries {
+		if e.Equals(entry) {
+			return idx, true
+		}
+	}
+	return -1, false
+}
+
 func LoadContest(contestFilePath string, countries []Country) Contest {
 	csvFile, err := os.Open(contestFilePath)
 	if err != nil {
