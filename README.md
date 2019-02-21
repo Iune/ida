@@ -5,6 +5,7 @@ Ida is a voting assistant to help process voters for online music competitions. 
 ## Usage
 
 ```
+ida 0.1.0 beta
 Usage: ida COUNTRIES SPREADSHEET
 
 Positional arguments:
@@ -13,6 +14,7 @@ Positional arguments:
 
 Options:
   --help, -h             display this help and exit
+  --version              display version and exit
 ```
 
 ## Building from Source

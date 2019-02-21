@@ -15,13 +15,20 @@ import (
 	log "github.com/sirupsen/logrus"
 )
 
+type args struct {
+	Countries   string `arg:"positional" help:"Path to tab-separated file with country information"`
+	Spreadsheet string `arg:"positional" help:"Path to tab-separated contest file"`
+}
+
+func (args) Version() string {
+	return "ida 0.1.0 beta"
+}
+
 func main() {
 	// Argument parsing
-	var args struct {
-		Countries   string `arg:"positional" help:"Path to tab-separated file with country information"`
-		Spreadsheet string `arg:"positional" help:"Path to tab-separated contest file"`
-	}
+	var args args
 	arg.MustParse(&args)
+
 	if len(args.Countries) == 0 {
 		log.Fatal("Input file path for the countries file was empty")
 	}
