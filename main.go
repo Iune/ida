@@ -52,7 +52,6 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		fmt.Println(voterName)
 
 		// Read in votes from standard input
 		var lines []string
@@ -81,7 +80,6 @@ func main() {
 		if err := input.Err(); err != nil {
 			log.Fatal(err)
 		}
-		fmt.Println(text)
 
 		if strings.ToLower(text) == "n" {
 			repeat = false
