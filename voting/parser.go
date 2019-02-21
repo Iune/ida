@@ -4,16 +4,25 @@ import (
 	"regexp"
 	"strconv"
 
+	log "github.com/sirupsen/logrus"
+
 	"github.com/iune/ida/contest"
 )
 
 func Find(c contest.Contest, lines []string) []Vote {
 	var votes []Vote
+	totalPoints := 0
 	for _, line := range lines {
 		vote, found := findEntryOnLine(c, line)
 		if found {
 			votes = append(votes, vote)
+			totalPoints += vote.Points
 		}
+	}
+	if totalPoints != 58 {
+		log.WithFields(log.Fields{
+			"total": totalPoints,
+		}).Warn("Total number of points is not 58")
 	}
 	return votes
 }

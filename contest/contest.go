@@ -3,9 +3,10 @@ package contest
 import (
 	"bufio"
 	"encoding/csv"
-	"log"
 	"os"
 	"strings"
+
+	log "github.com/sirupsen/logrus"
 )
 
 type Contest struct {

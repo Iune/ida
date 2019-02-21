@@ -4,9 +4,10 @@ import (
 	"bufio"
 	"encoding/csv"
 	"io"
-	"log"
 	"os"
 	"strings"
+
+	log "github.com/sirupsen/logrus"
 )
 
 type Country struct {

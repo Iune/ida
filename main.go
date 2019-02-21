@@ -1,13 +1,19 @@
 package main
 
 import (
-	"fmt"
+	"os"
 
 	"github.com/iune/ida/contest"
+	"github.com/iune/ida/results"
 	"github.com/iune/ida/voting"
+	log "github.com/sirupsen/logrus"
 )
 
 func main() {
+	// Set up logging
+	log.SetOutput(os.Stdout)
+	log.SetLevel(log.WarnLevel)
+
 	countries := contest.LoadCountries("countries.tsv")
 	contest := contest.LoadContest("1991.csv", countries)
 
@@ -19,6 +25,8 @@ func main() {
 		":cyprus: Cyprus: Elena Patroklou - SOS",
 		":7: UK: Samantha Janus - Message to Your Heart",
 	}
+
 	votes := voting.Find(contest, lines)
-	fmt.Println(votes)
+	results.Output(contest, votes, "Yugoslavia")
+	results.PrintVotes(votes)
 }
