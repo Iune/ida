@@ -21,7 +21,7 @@ Options:
 
 To install you will first need Go installed on your computer. Instructions on how to download and install Go can be found on the [official website](https://golang.org/dl/).
 
-Next, clone this repository and run the following two commands. This will download any dependencies required for `ida` and build an executable for the program.
+Next, clone this repository and run the following two commands. This will download any required dependencies, build and install an executable for the program.
 
 ```
 go get
