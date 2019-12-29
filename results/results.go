@@ -35,6 +35,9 @@ func Output(contest contest.Contest, votes []voting.Vote, voterName string) stri
 
 		voterIdx, foundVoter := contest.GetEntryIndex(voterEntry)
 		if foundVoter {
+			log.WithFields(log.Fields{
+				"country": voterEntry.Country.GetPrimaryName(),
+			}).Info("Voter has an entry in the contest")
 			votesArray[voterIdx] = "X"
 		}
 	}

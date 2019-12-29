@@ -1,7 +1,6 @@
 package contest
 
 import (
-	"fmt"
 	"strings"
 	"github.com/tealeg/xlsx"
 
@@ -59,7 +58,6 @@ func (c Contest) GetEntryIndex(entry Entry) (index int, found bool) {
 }
 
 func LoadContest(contestFilePath string, countries []Country) Contest {
-	fmt.Println(contestFilePath)
 	excelFile, err := xlsx.OpenFile(contestFilePath)
 	if err != nil {
 		log.Fatal(err)
@@ -69,7 +67,9 @@ func LoadContest(contestFilePath string, countries []Country) Contest {
 	voters := getVoters(sheet.Rows[0])
 	entries := getEntries(sheet, countries)
 
-	log.Infof("Loaded contest from %s", contestFilePath)
+	log.WithFields(log.Fields{
+		"file": contestFilePath,
+	}).Info("Loaded contest details from file")
 	return Contest{Entries: entries, Voters: voters}
 }
 

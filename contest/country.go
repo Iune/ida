@@ -54,7 +54,9 @@ func LoadCountries(countriesFilePath string) []Country {
 	byteValue, _ := ioutil.ReadAll(jsonFile)
 	var countries countries
 	json.Unmarshal(byteValue, &countries)
-	
-	log.Infof("Loaded countries from %s", countriesFilePath)
+
+	log.WithFields(log.Fields{
+		"file": countriesFilePath,
+	}).Info("Loaded country details from file")
 	return countries.Countries
 }
