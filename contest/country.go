@@ -19,8 +19,8 @@ type Country struct {
 }
 
 func (c Country) HasName(name string) bool {
-	for _, countryName := range c.Names {
-		if strings.Contains(strings.ToLower(name), strings.ToLower(countryName)) {
+	for _, n := range c.Names {
+		if strings.Contains(strings.ToLower(name), strings.ToLower(n)) {
 			return true
 		}
 	}
@@ -31,7 +31,7 @@ func (c Country) GetPrimaryName() string {
 	if len(c.Names) > 0 {
 		return c.Names[0]
 	}
-	log.Fatal("A Country must have at least one Name")
+	log.Fatal("A country must have at least one name")
 	return ""
 }
 
