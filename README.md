@@ -5,12 +5,12 @@ Ida is a voting assistant to help process voters for online music competitions. 
 ## Usage
 
 ```
-ida 0.1.1
+ida 0.2.0
 Usage: ida COUNTRIES SPREADSHEET
 
 Positional arguments:
-  COUNTRIES              Path to tab-separated file with country information
-  SPREADSHEET            Path to tab-separated contest file
+  COUNTRIES              Path to JSON file with country information
+  SPREADSHEET            Path to contest Excel spreadsheet
 
 Options:
   --help, -h             display this help and exit
