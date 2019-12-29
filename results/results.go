@@ -7,8 +7,8 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/iune/ida/contest"
-	"github.com/iune/ida/voting"
+	"github.com/Iune/ida/contest"
+	"github.com/Iune/ida/voting"
 )
 
 func Output(contest contest.Contest, votes []voting.Vote, voterName string) string {

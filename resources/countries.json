@@ -1,0 +1,329 @@
+{
+    "countries": [
+        {
+            "forum": "albania",
+            "names": [
+                "Albania"
+            ]
+        },
+        {
+            "forum": "armenia",
+            "names": [
+                "Armenia"
+            ]
+        },
+        {
+            "forum": "australia",
+            "names": [
+                "Australia"
+            ]
+        },
+        {
+            "forum": "austria",
+            "names": [
+                "Austria"
+            ]
+        },
+        {
+            "forum": "azerbaijan",
+            "names": [
+                "Azerbaijan"
+            ]
+        },
+        {
+            "forum": "belarus",
+            "names": [
+                "Belarus"
+            ]
+        },
+        {
+            "forum": "belgium",
+            "names": [
+                "Belgium"
+            ]
+        },
+        {
+            "forum": "bosniaherzegovina",
+            "names": [
+                "Bosnia & Herzegovina",
+                "Bosnia and Herzegovina",
+                "Bosnia Hercegovina"
+            ]
+        },
+        {
+            "forum": "brazil",
+            "names": [
+                "Brazil"
+            ]
+        },
+        {
+            "forum": "bulgaria",
+            "names": [
+                "Bulgaria"
+            ]
+        },
+        {
+            "forum": "canada",
+            "names": [
+                "Canada"
+            ]
+        },
+        {
+            "forum": "china",
+            "names": [
+                "China"
+            ]
+        },
+        {
+            "forum": "croatia",
+            "names": [
+                "Croatia"
+            ]
+        },
+        {
+            "forum": "cyprus",
+            "names": [
+                "Cyprus"
+            ]
+        },
+        {
+            "forum": "denmark",
+            "names": [
+                "Denmark"
+            ]
+        },
+        {
+            "forum": "estonia",
+            "names": [
+                "Estonia"
+            ]
+        },
+        {
+            "forum": "finland",
+            "names": [
+                "Finland"
+            ]
+        },
+        {
+            "forum": "france",
+            "names": [
+                "France"
+            ]
+        },
+        {
+            "forum": "germany",
+            "names": [
+                "Germany"
+            ]
+        },
+        {
+            "forum": "greece",
+            "names": [
+                "Greece"
+            ]
+        },
+        {
+            "forum": "hungary",
+            "names": [
+                "Hungary"
+            ]
+        },
+        {
+            "forum": "iceland",
+            "names": [
+                "Iceland"
+            ]
+        },
+        {
+            "forum": "india",
+            "names": [
+                "India"
+            ]
+        },
+        {
+            "forum": "ireland",
+            "names": [
+                "Ireland"
+            ]
+        },
+        {
+            "forum": "israel",
+            "names": [
+                "Israel"
+            ]
+        },
+        {
+            "forum": "italy",
+            "names": [
+                "Italy"
+            ]
+        },
+        {
+            "forum": "kosovo",
+            "names": [
+                "Kosovo"
+            ]
+        },
+        {
+            "forum": "latvia",
+            "names": [
+                "Latvia"
+            ]
+        },
+        {
+            "forum": "latvia",
+            "names": [
+                "Latvia"
+            ]
+        },
+        {
+            "forum": "lithuania",
+            "names": [
+                "Lithuania"
+            ]
+        },
+        {
+            "forum": "luxembourg",
+            "names": [
+                "Luxembourg",
+                "Luxemburg"
+            ]
+        },
+        {
+            "forum": "macedonia",
+            "names": [
+                "Macedonia"
+            ]
+        },
+        {
+            "forum": "malta",
+            "names": [
+                "Malta"
+            ]
+        },
+        {
+            "forum": "montenegro",
+            "names": [
+                "Montenegro"
+            ]
+        },
+        {
+            "forum": "newzealand",
+            "names": [
+                "New Zealand"
+            ]
+        },
+        {
+            "forum": "norway",
+            "names": [
+                "Norway"
+            ]
+        },
+        {
+            "forum": "philippines",
+            "names": [
+                "Philippines",
+                "The Philippines"
+            ]
+        },
+        {
+            "forum": "poland",
+            "names": [
+                "Poland"
+            ]
+        },
+        {
+            "forum": "portugal",
+            "names": [
+                "Portugal"
+            ]
+        },
+        {
+            "forum": "romania",
+            "names": [
+                "Romania"
+            ]
+        },
+        {
+            "forum": "russia",
+            "names": [
+                "Russia"
+            ]
+        },
+        {
+            "forum": "serbia",
+            "names": [
+                "Serbia"
+            ]
+        },
+        {
+            "forum": "slovenia",
+            "names": [
+                "Slovenia"
+            ]
+        },
+        {
+            "forum": "southkorea",
+            "names": [
+                "South Korea"
+            ]
+        },
+        {
+            "forum": "spain",
+            "names": [
+                "Spain"
+            ]
+        },
+        {
+            "forum": "sweden",
+            "names": [
+                "Sweden"
+            ]
+        },
+        {
+            "forum": "switzerland",
+            "names": [
+                "Switzerland"
+            ]
+        },
+        {
+            "forum": "thenetherlands",
+            "names": [
+                "The Netherlands",
+                "Netherlands"
+            ]
+        },
+        {
+            "forum": "turkey",
+            "names": [
+                "Turkey"
+            ]
+        },
+        {
+            "forum": "ukraine",
+            "names": [
+                "Ukraine"
+            ]
+        },
+        {
+            "forum": "unitedkingdom",
+            "names": [
+                "United Kingdom",
+                "UK"
+            ]
+        },
+        {
+            "forum": "usa",
+            "names": [
+                "United States",
+                "USA"
+            ]
+        },
+        {
+            "forum": "yugoslavia",
+            "names": [
+                "Yugoslavia"
+            ]
+        }
+    ]
+}

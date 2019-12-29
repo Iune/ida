@@ -1,10 +1,9 @@
 package contest
 
 import (
-	"bufio"
-	"encoding/csv"
-	"os"
+	"fmt"
 	"strings"
+	"github.com/tealeg/xlsx"
 
 	log "github.com/sirupsen/logrus"
 )
@@ -34,7 +33,7 @@ func (c Contest) FindSong(song string) (entry Entry, found bool) {
 
 func (c Contest) FindCountryByName(name string) (entry Entry, found bool) {
 	for _, e := range c.Entries {
-		if e.Country.Find(name) {
+		if e.Country.HasName(name) {
 			return e, true
 		}
 	}
@@ -60,44 +59,42 @@ func (c Contest) GetEntryIndex(entry Entry) (index int, found bool) {
 }
 
 func LoadContest(contestFilePath string, countries []Country) Contest {
-	csvFile, err := os.Open(contestFilePath)
-	if err != nil {
-		log.Fatal(err)
-	}
-	reader := csv.NewReader(bufio.NewReader(csvFile))
-	reader.FieldsPerRecord = -1
-	reader.Comma = '\t'
-	csvFileContents, err := reader.ReadAll()
+	fmt.Println(contestFilePath)
+	excelFile, err := xlsx.OpenFile(contestFilePath)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	voters := getVoters(csvFileContents)
-	entries := getEntries(csvFileContents, countries)
+	sheet := excelFile.Sheets[0]
+	voters := getVoters(sheet.Rows[0])
+	entries := getEntries(sheet, countries)
 
 	return Contest{Entries: entries, Voters: voters}
 }
 
-func getVoters(csv [][]string) []string {
+func getVoters(row *xlsx.Row) []string {
 	var voters []string
-	if len(csv[0]) >= 6 {
-		voters = csv[0][6:len(csv[0])]
+	cells := row.Cells
+	if len(cells) >= 6 {
+		for _, cell := range row.Cells[6:len(cells)] {
+			voters = append(voters, cell.String())
+		}
 	} else {
 		log.Fatal("No voters were defined in contest file")
 	}
 	return voters
 }
 
-func getEntries(csv [][]string, countries []Country) []Entry {
+func getEntries(sheet *xlsx.Sheet, countries []Country) []Entry {
 	var entries []Entry
-	for _, line := range csv[1:] {
-		country, found := GetCountry(countries, line[1])
+	for _, row := range sheet.Rows[1:] {
+		country, found := GetCountry(countries, row.Cells[1].String())
 		if !found {
-			log.Fatalf("Could not find country %s in countries file", line[1])
+			log.Fatalf("Could not find country %s in countries file", row.Cells[1])
 		}
-		artist := line[3]
-		song := line[4]
-
+		
+		artist := row.Cells[3].String()
+		song := row.Cells[4].String()
 		entries = append(entries, Entry{
 			Country: country,
 			Artist:  artist,
