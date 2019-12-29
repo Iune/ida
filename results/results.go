@@ -7,8 +7,8 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/iune/ida/contest"
-	"github.com/iune/ida/voting"
+	"github.com/Iune/ida/contest"
+	"github.com/Iune/ida/voting"
 )
 
 func Output(contest contest.Contest, votes []voting.Vote, voterName string) string {
@@ -35,6 +35,9 @@ func Output(contest contest.Contest, votes []voting.Vote, voterName string) stri
 
 		voterIdx, foundVoter := contest.GetEntryIndex(voterEntry)
 		if foundVoter {
+			log.WithFields(log.Fields{
+				"country": voterEntry.Country.GetPrimaryName(),
+			}).Info("Voter has an entry in the contest")
 			votesArray[voterIdx] = "X"
 		}
 	}

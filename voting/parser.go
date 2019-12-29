@@ -6,7 +6,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/iune/ida/contest"
+	"github.com/Iune/ida/contest"
 )
 
 func Find(c contest.Contest, lines []string) []Vote {

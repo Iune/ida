@@ -8,19 +8,20 @@ import (
 	"github.com/alexflint/go-arg"
 	"github.com/atotto/clipboard"
 
-	"github.com/iune/ida/contest"
-	"github.com/iune/ida/results"
-	"github.com/iune/ida/voting"
+	"github.com/Iune/ida/contest"
+	"github.com/Iune/ida/results"
+	"github.com/Iune/ida/voting"
+
 	log "github.com/sirupsen/logrus"
 )
 
 type args struct {
-	Countries   string `arg:"positional" help:"Path to tab-separated file with country information"`
-	Spreadsheet string `arg:"positional" help:"Path to tab-separated contest file"`
+	Countries   string `arg:"positional" help:"Path to JSON file with country information"`
+	Spreadsheet string `arg:"positional" help:"Path to contest Excel spreadsheet"`
 }
 
 func (args) Version() string {
-	return "ida 0.1.1"
+	return "ida 0.2.0"
 }
 
 func main() {
@@ -37,7 +38,7 @@ func main() {
 
 	// Set up logging
 	log.SetOutput(os.Stdin)
-	log.SetLevel(log.WarnLevel)
+	log.SetLevel(log.InfoLevel)
 
 	countries := contest.LoadCountries(args.Countries)
 	contest := contest.LoadContest(args.Spreadsheet, countries)

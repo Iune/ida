@@ -1,6 +1,6 @@
 package voting
 
-import "github.com/iune/ida/contest"
+import "github.com/Iune/ida/contest"
 
 type Vote struct {
 	Points int
