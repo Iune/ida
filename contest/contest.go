@@ -69,6 +69,7 @@ func LoadContest(contestFilePath string, countries []Country) Contest {
 	voters := getVoters(sheet.Rows[0])
 	entries := getEntries(sheet, countries)
 
+	log.Infof("Loaded contest from %s", contestFilePath)
 	return Contest{Entries: entries, Voters: voters}
 }
 
