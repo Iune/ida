@@ -41,6 +41,9 @@ class Contest:
     entries: List[Entry]
     voters: List[Country]
 
+    def find_voter_by_country_name(self, voter_name):
+        return next((voter for voter in self.voters if voter.contains_name(voter_name)), None)
+    
     def find_entry_by_artist(self, line):
         return next((entry for entry in self.entries if entry.artist.lower() in line.lower()), None)
 
@@ -56,12 +59,10 @@ class Contest:
     def copy_votes_to_clipboard(self, voter, votes):
         votes_lst = [""] * len(self.voters)
 
-        try:
+        if voter:
             countries = [entry.country for entry in self.entries]
             voter_idx = countries.index(voter)
             votes_lst[voter_idx] = "X"
-        except ValueError:
-            pass
 
         for vote in votes:
             entry_idx = self.entries.index(vote.entry)
@@ -160,8 +161,20 @@ def main():
     contest = load_contest("resources/output.json")
     parser = Parser(contest)
     
-    lines = ["12 Estonia", "12 Montenegro", "10 Ireland"]
-    parser.parse(contest.voters[0], lines)
+    while True:
+        country = input("Country Name:\n> ")
+        voter = contest.find_voter_by_country_name(country)
+
+        lines = []
+        while True:
+            try:
+                lines.append(input())
+            except EOFError:
+                break
+
+        print()
+        parser.parse(voter, lines)
+        print()
 
 if __name__ == "__main__":
     main()
