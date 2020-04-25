@@ -1,6 +1,6 @@
 # Ida
 
-Ida is a voting assistant to help process voters for online music competitions. It is designed to work with contest spreadsheet files for [Melbourne](https://github.com/iune-melbourne/melbourne-archive).
+Ida is a voting assistant to help process voters for online music competitions. It is designed to work with contest files for [Melbourne](https://github.com/Iune/melbourne).
 
 ## Installation
 
