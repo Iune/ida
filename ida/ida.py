@@ -3,7 +3,6 @@ from typing import List
 from html import unescape
 from string import digits
 from collections import Counter
-from os import environ
 
 import re
 import json
@@ -11,6 +10,7 @@ import argparse
 import pyperclip
 
 digits = frozenset(digits)
+
 
 @dataclass(frozen=True)
 class Country:
@@ -43,7 +43,7 @@ class Contest:
 
     def find_voter_by_country_name(self, voter_name):
         return next((voter for voter in self.voters if voter.contains_name(voter_name)), None)
-    
+
     def find_entry_by_artist(self, line):
         return next((entry for entry in self.entries if entry.artist.lower() in line.lower()), None)
 
@@ -71,6 +71,7 @@ class Contest:
         votes_str = "\n".join(votes_lst)
         pyperclip.copy(votes_str)
 
+
 @dataclass
 class Vote:
     entry: Entry
@@ -79,8 +80,10 @@ class Vote:
     @staticmethod
     def _print_votes(votes):
         print("Found the following votes:")
-        for vote in sorted(votes, key = lambda x: [-x.points, x.entry.country.primary_name()]):
-            print("{:2} | {}: {} - {}".format(vote.points, vote.entry.country.primary_name(), vote.entry.artist, vote.entry.song))
+        for vote in sorted(votes, key=lambda x: [-x.points, x.entry.country.primary_name()]):
+            print("{:2} | {}: {} - {}".format(vote.points,
+                                              vote.entry.country.primary_name(), vote.entry.artist, vote.entry.song))
+
 
 def load_contest(file_name):
     def load_json():
@@ -93,7 +96,7 @@ def load_contest(file_name):
             iso=country["iso"],
             names=country["names"]
         )
-        
+
     def parse_entry(entry):
         return Entry(
             country=parse_country(entry["country"]),
@@ -117,10 +120,12 @@ class Parser:
         votes = [vote for vote in votes if vote]
 
         if any(voter == vote.entry.country for vote in votes):
-            print("{} voted for themselves".format(voter.country.primary_name()))
+            print("{} voted for themselves".format(
+                voter.country.primary_name()))
 
         vote_recipients = [vote.entry.country.primary_name() for vote in votes]
-        duplicate_recipients = [country for country, count in Counter(vote_recipients).items() if count > 1]
+        duplicate_recipients = [country for country, count in Counter(
+            vote_recipients).items() if count > 1]
         for country in duplicate_recipients:
             print("{} received points more than once".format(country))
 
@@ -148,7 +153,6 @@ class Parser:
             return Vote(entry=entry, points=points)
         else:
             return None
-        
 
     def _get_points(self, line):
         try:
@@ -156,11 +160,17 @@ class Parser:
         except ValueError:
             return None
 
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("contest", help="JSON file containing contest details")
+    return parser.parse_args()
+
 
 def main():
-    contest = load_contest("resources/output.json")
+    args = parse_args()
+    contest = load_contest(args.contest)
     parser = Parser(contest)
-    
+
     while True:
         country = input("Country Name:\n> ")
         voter = contest.find_voter_by_country_name(country)
@@ -175,6 +185,7 @@ def main():
         print()
         parser.parse(voter, lines)
         print()
+
 
 if __name__ == "__main__":
     main()
