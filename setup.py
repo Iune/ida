@@ -19,7 +19,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
-    install_requires=["pyperclip"],
+    install_requires=["pyperclip", "colorama", "termcolor"],
     entry_points={
         "console_scripts": [
             "ida=ida.ida:main"

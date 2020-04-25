@@ -3,14 +3,16 @@ from typing import List
 from html import unescape
 from string import digits
 from collections import Counter
+from colorama import init
+from termcolor import colored
 
 import re
 import json
 import argparse
 import pyperclip
 
+init()
 digits = frozenset(digits)
-
 
 @dataclass(frozen=True)
 class Country:
@@ -120,18 +122,18 @@ class Parser:
         votes = [vote for vote in votes if vote]
 
         if any(voter == vote.entry.country for vote in votes):
-            print("{} voted for themselves".format(
-                voter.country.primary_name()))
+            print(colored("{} voted for themselves".format(
+                voter.primary_name()), "red"))
 
         vote_recipients = [vote.entry.country.primary_name() for vote in votes]
         duplicate_recipients = [country for country, count in Counter(
             vote_recipients).items() if count > 1]
         for country in duplicate_recipients:
-            print("{} received points more than once".format(country))
+            print(colored("{} received points more than once".format(country), "red"))
 
         points_total = sum([vote.points for vote in votes])
         if points_total != 58:
-            print("Total number of points was not 58: {}".format(points_total))
+            print(colored("Total number of points was not 58: {}".format(points_total), "red"))
 
         print()
         Vote._print_votes(votes)
@@ -182,7 +184,7 @@ def main():
             except EOFError:
                 break
 
-        print()
+        print("\n")
         parser.parse(voter, lines)
         print()
 
