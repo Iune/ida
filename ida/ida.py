@@ -184,7 +184,7 @@ def main():
             except EOFError:
                 break
 
-        print("\n")
+        print()
         parser.parse(voter, lines)
         print()
 
