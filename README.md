@@ -4,18 +4,14 @@ Ida is a voting assistant to help process voters for online music competitions. 
 
 ## Installation
 
-```
-python setup.py install
+```bash
+crystal build src/ida.cr
 ```
 
 ## Usage
 
 ```
-usage: ida [-h] contest
-
-positional arguments:
-  contest     JSON file containing contest details
-
-optional arguments:
-  -h, --help  show this help message and exit
+Usage: ida [arguments]
+    -c CONTEST, --contest=CONTEST    (Required) JSON file containing contest details
+    -h, --help                       Show this help
 ```

@@ -1,0 +1,13 @@
+name: ida
+version: 0.4.0
+
+authors:
+  - Aditya Duri <aditya.duri@gmail.com>
+
+targets:
+  ida:
+    main: src/ida.cr
+
+crystal: 0.35.1
+
+license: MIT
