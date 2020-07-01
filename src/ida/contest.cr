@@ -84,7 +84,7 @@ module Contest
 
       votes_str = votes_arr.join("\n")
       puts votes_str
-      system "#{votes_str} | pbcopy"
+      system "\"#{votes_str}\" | pbcopy"
     end
 
     private def self.parse_country(country)

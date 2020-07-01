@@ -13,10 +13,8 @@ module Parser
     def self.print_votes(votes)
       puts "Found the following votes:"
       votes
-        .sort_by{|vote| {-vote.points, vote.entry.country.primary_name}}
-        .each{|vote| printf "%2d | %s: %s - %s\n", vote.points, vote.entry.country.primary_name, vote.entry.artist, vote.entry.song}
-    
-      # TODO
+        .sort_by { |vote| {-vote.points, vote.entry.country.primary_name} }
+        .each { |vote| printf "%2d | %s: %s - %s\n", vote.points, vote.entry.country.primary_name, vote.entry.artist, vote.entry.song }
     end
   end
 
@@ -28,7 +26,7 @@ module Parser
 
     def parse(voter, lines : Array(String))
       votes = lines.map { |line| get_votes(HTML.unescape(line)) }.compact
-      
+
       if votes.find { |vote| voter.primary_name == vote.entry.country.primary_name }
         puts "#{voter.primary_name} voted for themselves".colorize(:red)
       end
@@ -37,10 +35,10 @@ module Parser
       duplicate_vote_recipients = vote_recipients.select { |country| vote_recipients.count(country) > 1 }.uniq
       duplicate_vote_recipients.each { |country| puts "#{country} received points more than once".colorize(:red) }
 
-      points_total = votes.map{|vote| vote.points}.sum
+      points_total = votes.map { |vote| vote.points }.sum
       if points_total != 58
         puts "Total number of points was not 58: #{points_total}".colorize(:red)
-      end      
+      end
 
       puts ""
       Vote.print_votes(votes)
