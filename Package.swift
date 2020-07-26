@@ -19,9 +19,9 @@ let package = Package(
             .target(
                     name: "ida",
                     dependencies: [
-                        "HTMLString",
-                        "Rainbow",
-                        "SwiftyJSON",
+                        .product(name: "HTMLString", package: "HTMLString"),
+                        .product(name: "Rainbow", package: "Rainbow"),
+                        .product(name: "SwiftyJSON", package: "SwiftyJSON"),
                         .product(name: "ArgumentParser", package: "swift-argument-parser"),
                     ]),
             .testTarget(
