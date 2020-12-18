@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		484BCC5A258BD8F300A04F5A /* IdaParser in Frameworks */ = {isa = PBXBuildFile; productRef = 484BCC59258BD8F300A04F5A /* IdaParser */; };
+		485C7BB0258D0E25006A7696 /* ParsedVotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C7BAF258D0E25006A7696 /* ParsedVotesView.swift */; };
 		48C773D8258BCFF70052E5F6 /* IdaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C773D7258BCFF70052E5F6 /* IdaApp.swift */; };
 		48C773DA258BCFF70052E5F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C773D9258BCFF70052E5F6 /* ContentView.swift */; };
 		48C773DC258BCFFA0052E5F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48C773DB258BCFFA0052E5F6 /* Assets.xcassets */; };
 		48C773DF258BCFFA0052E5F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48C773DE258BCFFA0052E5F6 /* Preview Assets.xcassets */; };
+		48F3BCCF258D246A009F2A67 /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F3BCCE258D246A009F2A67 /* MainAppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		485C7BAF258D0E25006A7696 /* ParsedVotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedVotesView.swift; sourceTree = "<group>"; };
 		48C773D4258BCFF70052E5F6 /* Ida.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ida.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C773D7258BCFF70052E5F6 /* IdaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdaApp.swift; sourceTree = "<group>"; };
 		48C773D9258BCFF70052E5F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		48C773DE258BCFFA0052E5F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		48C773E0258BCFFA0052E5F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48C773E1258BCFFA0052E5F6 /* Ida.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ida.entitlements; sourceTree = "<group>"; };
+		48F3BCCE258D246A009F2A67 /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 			children = (
 				48C773D7258BCFF70052E5F6 /* IdaApp.swift */,
 				48C773D9258BCFF70052E5F6 /* ContentView.swift */,
+				48F3BCCE258D246A009F2A67 /* MainAppView.swift */,
+				485C7BAF258D0E25006A7696 /* ParsedVotesView.swift */,
 				48C773DB258BCFFA0052E5F6 /* Assets.xcassets */,
 				48C773E0258BCFFA0052E5F6 /* Info.plist */,
 				48C773E1258BCFFA0052E5F6 /* Ida.entitlements */,
@@ -148,6 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				485C7BB0258D0E25006A7696 /* ParsedVotesView.swift in Sources */,
+				48F3BCCF258D246A009F2A67 /* MainAppView.swift in Sources */,
 				48C773DA258BCFF70052E5F6 /* ContentView.swift in Sources */,
 				48C773D8258BCFF70052E5F6 /* IdaApp.swift in Sources */,
 			);

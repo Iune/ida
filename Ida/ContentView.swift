@@ -10,64 +10,38 @@ import IdaParser
 
 struct ContentView: View {
     
-    @State private var parser: Parser? = nil
-    
-    // Voter details
     @State private var voterName: String = ""
     @State private var voterMsg: String = ""
+    @State private var parser: Parser? = nil
     @State private var parsedVotes: ParsedVotes? = nil
     
     var body: some View {
-        VStack(alignment: .leading) {
-            HStack {
-                VStack(alignment: .leading) {
-                    TextField("Voter Name", text: $voterName).disableAutocorrection(true)
-                    TextEditor(text: $voterMsg).disableAutocorrection(true)
-                        .font(.system(.body, design: .monospaced))
-                }.frame(minWidth: 0, maxWidth: .infinity)
-                Divider()
-                VStack(alignment: .leading) {
-                    ScrollView {
-                        VStack(alignment: .leading) {
-                            ForEach(self.parsedVotes?.votes ?? [], id: \.self) { vote in
-                                Label(vote.entry.country.primaryName, systemImage: "\(vote.points).circle")
-                                    .frame(alignment: .topLeading)
-                            }
-                        }
-                    }.frame(minWidth: 0, maxWidth: .infinity)
-                    if let parsedVotes = self.parsedVotes {
-                        if parsedVotes.warningMsgs.count > 0 {
-                            Divider()
-                        }
-                    }
-                    VStack(alignment: .leading) {
-                        ForEach(self.parsedVotes?.warningMsgs ?? [], id: \.self) { warning in
-                            Label(warning, systemImage: "exclamationmark.triangle")
-                                .font(.caption)
-                        }
-                    }
-                }.frame(minWidth: 0, maxWidth: .infinity)
+        MainAppView(voterName: self.$voterName,
+                    voterMsg: self.$voterMsg,
+                    parser: self.$parser,
+                    parsedVotes: self.$parsedVotes
+        )
+        .padding()
+        .frame(minWidth: 600, maxWidth: .infinity, minHeight: 480, maxHeight: .infinity)
+        .toolbar {
+            ToolbarItem(placement: .primaryAction) {
+                toolbarButtons
             }
         }
-        .padding()
-        .frame(minWidth: 500, maxWidth: .infinity, minHeight: 300, maxHeight: .infinity)
-        .toolbar{
-            ToolbarItem(placement: .primaryAction) {
-                Button(action: selectContestFileAndSetParser) {
-                    Label("Load Contest JSON File", systemImage: "doc")
-                }.keyboardShortcut("O", modifiers: .command)
-            }
-            ToolbarItem(placement: .primaryAction) {
-                Button(action: resetVoterDetails) {
-                    Label("Reset Voter Details", systemImage: "arrow.clockwise")
-                }.keyboardShortcut("R", modifiers: .command)
-            }
-            ToolbarItem(placement: .primaryAction) {
-                Button(action: parseVotes) {
-                    Label("Parse Votes", systemImage: "play.fill")
-                }.disabled(self.parser == nil || self.voterName.isEmpty || self.voterMsg.isEmpty)
-                .keyboardShortcut("C")
-            }
+    }
+    
+    var toolbarButtons: some View {
+        HStack {
+            Button(action: selectContestFileAndSetParser) {
+                Label("Load Contest JSON File", systemImage: "doc")
+            }.keyboardShortcut("O")
+            Button(action: resetVoterDetails) {
+                Label("Reset Voter Details", systemImage: "arrow.clockwise")
+            }.keyboardShortcut("R")
+            Button(action: parseVotes) {
+                Label("Parse Votes", systemImage: "play.fill")
+            }.disabled(self.parser == nil || self.voterName.isEmpty || self.voterMsg.isEmpty)
+            .keyboardShortcut("C")
         }
     }
     
