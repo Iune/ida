@@ -1,0 +1,34 @@
+[tool.briefcase]
+project_name = "Ida"
+bundle = "org.iune"
+version = "0.0.1"
+url = "https://github.com/Iune/ida"
+license = "BSD license"
+author = 'Aditya Duri'
+author_email = "aditya.duri@gmail.com"
+
+[tool.briefcase.app.ida]
+formal_name = "Ida"
+description = "Process voters for music competitions"
+icon = "src/ida/resources/ida"
+sources = ['src/ida']
+requires = [
+    'pyside2==5.13.0',]
+
+
+[tool.briefcase.app.ida.macOS]
+requires = []
+
+[tool.briefcase.app.ida.linux]
+requires = []
+system_requires = []
+
+[tool.briefcase.app.ida.windows]
+requires = []
+
+# Mobile deployments
+[tool.briefcase.app.ida.iOS]
+requires = []
+
+[tool.briefcase.app.ida.android]
+requires = []
