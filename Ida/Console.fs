@@ -59,5 +59,6 @@ let rec voterLoop (parser: Parser, firstVoter: bool) =
 
     AnsiConsole.WriteLine()
     printVotes (votes)
+    parser.CopyVotes(voter, votes)
     
     voterLoop (parser, false)
