@@ -1,12 +1,19 @@
 {
-  "name": "ida",
+  "name": "@iune/ida",
   "version": "0.4.0",
   "description": "Online music contest management utility",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "files": [
+    "/dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .ts"
+  },
+  "bin": {
+    "ida": "./dist/index.js"
   },
   "author": "Aditya Duri <aditya.duri@gmail.com>",
   "license": "BSD 3-CLAUSE",
