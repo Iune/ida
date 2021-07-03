@@ -1,14 +1,15 @@
-import { Contest, Country, Entry } from "./contest";
-import { createWorkbook, writeWorkbook } from "./spreadsheet";
+import { spreadsheet } from "./commands";
 
 async function main() {
-    const countries = Country.fromFile("resources/countries.json")
-    const entries = Entry.fromFile("resources/entries.txt", countries);
-    // const contest = Contest.fromFile("resources/sample.json")
-    // console.log(contest);
+    await spreadsheet('resources/countries.json', 'resources/entries.txt', 'resources/output');
 
-    const workbook = createWorkbook(entries);
-    await writeWorkbook(workbook, "resources/output.xlsx");
+    // const countries = Country.fromFile("resources/countries.json")
+    // const entries = Entry.fromFile("resources/entries.txt", countries);
+    // // const contest = Contest.fromFile("resources/sample.json")
+    // // console.log(contest);
+
+    // const workbook = createWorkbook(entries);
+    // await writeWorkbook(workbook, "resources/output.xlsx");
 }
 
 (async () => {
