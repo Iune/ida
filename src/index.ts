@@ -1,22 +1,15 @@
+import { Command } from 'commander';
 import { spreadsheet } from "./commands";
 
-async function main() {
-    await spreadsheet('resources/countries.json', 'resources/entries.txt', 'resources/output');
+const program = new Command();
 
-    // const countries = Country.fromFile("resources/countries.json")
-    // const entries = Entry.fromFile("resources/entries.txt", countries);
-    // // const contest = Contest.fromFile("resources/sample.json")
-    // // console.log(contest);
+program
+    .version('0.4.0')
+    .command('spreadsheet <countriesFile> <entriesFile> <outputFilePrefix>')
+    .description('Generate Excel spreadsheet and contest JSON file based on input country and entry details')
+    .action(async (countriesFile, entriesFile, outputFilePrefix) => {
+        spreadsheet(countriesFile, entriesFile, outputFilePrefix)
+    });
 
-    // const workbook = createWorkbook(entries);
-    // await writeWorkbook(workbook, "resources/output.xlsx");
-}
-
-(async () => {
-    try {
-        await main();
-    } catch (err) {
-        console.error(err);
-    }
-})();
+program.parse();
 
