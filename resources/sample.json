@@ -1,1 +1,1214 @@
-{"countries": [{"forum": "albania", "iso": "al", "names": ["Albania"]}, {"forum": "armenia", "iso": "am", "names": ["Armenia"]}, {"forum": "australia", "iso": "au", "names": ["Australia"]}, {"forum": "austria", "iso": "at", "names": ["Austria"]}, {"forum": "azerbaijan", "iso": "az", "names": ["Azerbaijan"]}, {"forum": "belarus", "iso": "by", "names": ["Belarus"]}, {"forum": "belgium", "iso": "be", "names": ["Belgium"]}, {"forum": "bosniaherzegovina", "iso": "ba", "names": ["Bosnia & Herzegovina", "Bosnia and Herzegovina", "Bosnia Hercegovina"]}, {"forum": "brazil", "iso": "br", "names": ["Brazil"]}, {"forum": "bulgaria", "iso": "bg", "names": ["Bulgaria"]}, {"forum": "canada", "iso": "ca", "names": ["Canada"]}, {"forum": "china", "iso": "cn", "names": ["China"]}, {"forum": "croatia", "iso": "hr", "names": ["Croatia"]}, {"forum": "cyprus", "iso": "cy", "names": ["Cyprus"]}, {"forum": "czechrepublic", "iso": "dk", "names": ["Czech Republic", "Czechia"]}, {"forum": "denmark", "iso": "ee", "names": ["Denmark"]}, {"forum": "estonia", "iso": "ee", "names": ["Estonia"]}, {"forum": "finland", "iso": "fi", "names": ["Finland"]}, {"forum": "france", "iso": "fr", "names": ["France"]}, {"forum": "georgia", "iso": "ge", "names": ["Georgia"]}, {"forum": "germany", "iso": "de", "names": ["Germany"]}, {"forum": "greece", "iso": "gr", "names": ["Greece"]}, {"forum": "hungary", "iso": "hu", "names": ["Hungary"]}, {"forum": "iceland", "iso": "is", "names": ["Iceland"]}, {"forum": "india", "iso": "in", "names": ["India"]}, {"forum": "ireland", "iso": "ie", "names": ["Ireland"]}, {"forum": "israel", "iso": "il", "names": ["Israel"]}, {"forum": "italy", "iso": "it", "names": ["Italy"]}, {"forum": "kosovo", "iso": "xk", "names": ["Kosovo"]}, {"forum": "latvia", "iso": "lv", "names": ["Latvia"]}, {"forum": "lithuania", "iso": "lt", "names": ["Lithuania"]}, {"forum": "luxembourg", "iso": "lu", "names": ["Luxembourg", "Luxemburg"]}, {"forum": "macedonia", "iso": "mk", "names": ["Macedonia"]}, {"forum": "malta", "iso": "mt", "names": ["Malta"]}, {"forum": "moldova", "iso": "md", "names": ["Moldova"]}, {"forum": "montenegro", "iso": "me", "names": ["Montenegro"]}, {"forum": "newzealand", "iso": "nz", "names": ["New Zealand"]}, {"forum": "norway", "iso": "no", "names": ["Norway"]}, {"forum": "philippines", "iso": "ph", "names": ["Philippines", "The Philippines"]}, {"forum": "poland", "iso": "pl", "names": ["Poland"]}, {"forum": "portugal", "iso": "pt", "names": ["Portugal"]}, {"forum": "romania", "iso": "ro", "names": ["Romania"]}, {"forum": "russia", "iso": "ru", "names": ["Russia"]}, {"forum": "sanmarino", "iso": "sm", "names": ["San Marino"]}, {"forum": "serbia", "iso": "rs", "names": ["Serbia"]}, {"forum": "slovenia", "iso": "si", "names": ["Slovenia"]}, {"forum": "southkorea", "iso": "sk", "names": ["South Korea"]}, {"forum": "spain", "iso": "es", "names": ["Spain"]}, {"forum": "sweden", "iso": "se", "names": ["Sweden"]}, {"forum": "switzerland", "iso": "ch", "names": ["Switzerland"]}, {"forum": "thenetherlands", "iso": "nl", "names": ["The Netherlands", "Netherlands"]}, {"forum": "turkey", "iso": "tk", "names": ["Turkey"]}, {"forum": "ukraine", "iso": "ua", "names": ["Ukraine"]}, {"forum": "unitedkingdom", "iso": "gb", "names": ["United Kingdom", "UK"]}, {"forum": "usa", "iso": "us", "names": ["United States", "USA"]}, {"forum": "yugoslavia", "iso": "yu", "names": ["Yugoslavia"]}], "entries": [{"country": {"forum": "albania", "iso": "al", "names": ["Albania"]}, "flag": "World/al.png", "artist": "Eugent Bushpepa", "song": "Stay With Me Tonight"}, {"country": {"forum": "armenia", "iso": "am", "names": ["Armenia"]}, "flag": "World/am.png", "artist": "John Dolmayan ft. Sirusho", "song": "Hung Up"}, {"country": {"forum": "australia", "iso": "au", "names": ["Australia"]}, "flag": "World/au.png", "artist": "Lenka", "song": "On My Side"}, {"country": {"forum": "austria", "iso": "at", "names": ["Austria"]}, "flag": "World/at.png", "artist": "My Ugly Clementine", "song": "Playground"}, {"country": {"forum": "azerbaijan", "iso": "az", "names": ["Azerbaijan"]}, "flag": "World/az.png", "artist": "R\u00f6ya", "song": "Dedin yox"}, {"country": {"forum": "belarus", "iso": "by", "names": ["Belarus"]}, "flag": "World/by.png", "artist": "Zlata Mai", "song": "Kassiopeya"}, {"country": {"forum": "belgium", "iso": "be", "names": ["Belgium"]}, "flag": "World/be.png", "artist": "Blanche", "song": "Empire"}, {"country": {"forum": "bulgaria", "iso": "bg", "names": ["Bulgaria"]}, "flag": "World/bg.png", "artist": "Denis Teofikov", "song": "Katastrofa"}, {"country": {"forum": "china", "iso": "cn", "names": ["China"]}, "flag": "World/cn.png", "artist": "Mao Buyi", "song": "Wang Jr."}, {"country": {"forum": "croatia", "iso": "hr", "names": ["Croatia"]}, "flag": "World/hr.png", "artist": "\u0110utko", "song": "Terase"}, {"country": {"forum": "cyprus", "iso": "cy", "names": ["Cyprus"]}, "flag": "World/cy.png", "artist": "Valando Tryfonos & Stathis Drogosis", "song": "Amaxi"}, {"country": {"forum": "denmark", "iso": "ee", "names": ["Denmark"]}, "flag": "World/ee.png", "artist": "Agnes Obel", "song": "Island of Doom"}, {"country": {"forum": "estonia", "iso": "ee", "names": ["Estonia"]}, "flag": "World/ee.png", "artist": "Tuulikki Bartosik", "song": "M\u00e4lutaguse polka"}, {"country": {"forum": "finland", "iso": "fi", "names": ["Finland"]}, "flag": "World/fi.png", "artist": "Antti Tuisku", "song": "Jumalan k\u00e4mmenell\u00e4"}, {"country": {"forum": "france", "iso": "fr", "names": ["France"]}, "flag": "World/fr.png", "artist": "Vitaa & Slimane", "song": "\u00c7a va, \u00e7a vient"}, {"country": {"forum": "germany", "iso": "de", "names": ["Germany"]}, "flag": "World/de.png", "artist": "Anica Russo", "song": "REBEL"}, {"country": {"forum": "greece", "iso": "gr", "names": ["Greece"]}, "flag": "World/gr.png", "artist": "Ble", "song": "S'agapisa kryfa"}, {"country": {"forum": "iceland", "iso": "is", "names": ["Iceland"]}, "flag": "World/is.png", "artist": "\u00c1sgeir", "song": "Lazy Giants"}, {"country": {"forum": "india", "iso": "in", "names": ["India"]}, "flag": "World/in.png", "artist": "Anish Sood ft. Lisa Mishra", "song": "Running Back To You"}, {"country": {"forum": "ireland", "iso": "ie", "names": ["Ireland"]}, "flag": "World/ie.png", "artist": "FLAVIA", "song": "Til I Die"}, {"country": {"forum": "israel", "iso": "il", "names": ["Israel"]}, "flag": "World/il.png", "artist": "Nathan Goshen & Ishay Ribo", "song": "Nechake lecha"}, {"country": {"forum": "italy", "iso": "it", "names": ["Italy"]}, "flag": "World/it.png", "artist": "Brunori Sas", "song": "Al di l\u00e0 dell\u2019amore"}, {"country": {"forum": "kosovo", "iso": "xk", "names": ["Kosovo"]}, "flag": "World/xk.png", "artist": "Me T'Njofsh\u00ebm", "song": "Nije"}, {"country": {"forum": "lithuania", "iso": "lt", "names": ["Lithuania"]}, "flag": "World/lt.png", "artist": "IGL\u0116", "song": "Nei\u0161eik, dar pab\u016bk"}, {"country": {"forum": "macedonia", "iso": "mk", "names": ["Macedonia"]}, "flag": "World/mk.png", "artist": "Antonia Gigovska", "song": "Kriva sum"}, {"country": {"forum": "montenegro", "iso": "me", "names": ["Montenegro"]}, "flag": "World/me.png", "artist": "L\u00e8rr", "song": "Aves"}, {"country": {"forum": "thenetherlands", "iso": "nl", "names": ["The Netherlands", "Netherlands"]}, "flag": "World/nl.png", "artist": "\u00c1slaug", "song": "Take From Me"}, {"country": {"forum": "norway", "iso": "no", "names": ["Norway"]}, "flag": "World/no.png", "artist": "KEiiNO", "song": "Colours"}, {"country": {"forum": "philippines", "iso": "ph", "names": ["Philippines", "The Philippines"]}, "flag": "World/ph.png", "artist": "IV of Spades", "song": "Ang pinagmulan"}, {"country": {"forum": "poland", "iso": "pl", "names": ["Poland"]}, "flag": "World/pl.png", "artist": "Kasia Lins", "song": "R\u00f3b tak dalej"}, {"country": {"forum": "portugal", "iso": "pt", "names": ["Portugal"]}, "flag": "World/pt.png", "artist": "Claudisabel", "song": "Condenada"}, {"country": {"forum": "romania", "iso": "ro", "names": ["Romania"]}, "flag": "World/ro.png", "artist": "SICKOTOY ft. Roxen", "song": "You Don't Love Me"}, {"country": {"forum": "russia", "iso": "ru", "names": ["Russia"]}, "flag": "World/ru.png", "artist": "Dima Bilan", "song": "Poluno\u010dnoe taksi"}, {"country": {"forum": "serbia", "iso": "rs", "names": ["Serbia"]}, "flag": "World/rs.png", "artist": "Danica Krsti\u0107", "song": "Svatovi"}, {"country": {"forum": "slovenia", "iso": "si", "names": ["Slovenia"]}, "flag": "World/si.png", "artist": "Regen", "song": "Love Me or Don't"}, {"country": {"forum": "spain", "iso": "es", "names": ["Spain"]}, "flag": "World/es.png", "artist": "Dani Martin", "song": "La mentira"}, {"country": {"forum": "sweden", "iso": "se", "names": ["Sweden"]}, "flag": "World/se.png", "artist": "Ingrid Witt", "song": "Slow Decay"}, {"country": {"forum": "switzerland", "iso": "ch", "names": ["Switzerland"]}, "flag": "World/ch.png", "artist": "Marius Bear", "song": "Not Loud Enough"}, {"country": {"forum": "turkey", "iso": "tk", "names": ["Turkey"]}, "flag": "World/tk.png", "artist": "Feride Hilal Ak\u0131n", "song": "Tutku"}, {"country": {"forum": "ukraine", "iso": "ua", "names": ["Ukraine"]}, "flag": "World/ua.png", "artist": "MARUV", "song": "If You Want Her"}, {"country": {"forum": "unitedkingdom", "iso": "gb", "names": ["United Kingdom", "UK"]}, "flag": "World/gb.png", "artist": "Jessie Ware", "song": "Spotlight"}, {"country": {"forum": "usa", "iso": "us", "names": ["United States", "USA"]}, "flag": "World/us.png", "artist": "Ian Randall Thornton", "song": "Hiatus"}], "voters": [{"forum": "albania", "iso": "al", "names": ["Albania"]}, {"forum": "armenia", "iso": "am", "names": ["Armenia"]}, {"forum": "australia", "iso": "au", "names": ["Australia"]}, {"forum": "austria", "iso": "at", "names": ["Austria"]}, {"forum": "azerbaijan", "iso": "az", "names": ["Azerbaijan"]}, {"forum": "belarus", "iso": "by", "names": ["Belarus"]}, {"forum": "belgium", "iso": "be", "names": ["Belgium"]}, {"forum": "bulgaria", "iso": "bg", "names": ["Bulgaria"]}, {"forum": "china", "iso": "cn", "names": ["China"]}, {"forum": "croatia", "iso": "hr", "names": ["Croatia"]}, {"forum": "cyprus", "iso": "cy", "names": ["Cyprus"]}, {"forum": "denmark", "iso": "ee", "names": ["Denmark"]}, {"forum": "estonia", "iso": "ee", "names": ["Estonia"]}, {"forum": "finland", "iso": "fi", "names": ["Finland"]}, {"forum": "france", "iso": "fr", "names": ["France"]}, {"forum": "germany", "iso": "de", "names": ["Germany"]}, {"forum": "greece", "iso": "gr", "names": ["Greece"]}, {"forum": "iceland", "iso": "is", "names": ["Iceland"]}, {"forum": "india", "iso": "in", "names": ["India"]}, {"forum": "ireland", "iso": "ie", "names": ["Ireland"]}, {"forum": "israel", "iso": "il", "names": ["Israel"]}, {"forum": "italy", "iso": "it", "names": ["Italy"]}, {"forum": "kosovo", "iso": "xk", "names": ["Kosovo"]}, {"forum": "lithuania", "iso": "lt", "names": ["Lithuania"]}, {"forum": "macedonia", "iso": "mk", "names": ["Macedonia"]}, {"forum": "montenegro", "iso": "me", "names": ["Montenegro"]}, {"forum": "thenetherlands", "iso": "nl", "names": ["The Netherlands", "Netherlands"]}, {"forum": "norway", "iso": "no", "names": ["Norway"]}, {"forum": "philippines", "iso": "ph", "names": ["Philippines", "The Philippines"]}, {"forum": "poland", "iso": "pl", "names": ["Poland"]}, {"forum": "portugal", "iso": "pt", "names": ["Portugal"]}, {"forum": "romania", "iso": "ro", "names": ["Romania"]}, {"forum": "russia", "iso": "ru", "names": ["Russia"]}, {"forum": "serbia", "iso": "rs", "names": ["Serbia"]}, {"forum": "slovenia", "iso": "si", "names": ["Slovenia"]}, {"forum": "spain", "iso": "es", "names": ["Spain"]}, {"forum": "sweden", "iso": "se", "names": ["Sweden"]}, {"forum": "switzerland", "iso": "ch", "names": ["Switzerland"]}, {"forum": "turkey", "iso": "tk", "names": ["Turkey"]}, {"forum": "ukraine", "iso": "ua", "names": ["Ukraine"]}, {"forum": "unitedkingdom", "iso": "gb", "names": ["United Kingdom", "UK"]}, {"forum": "usa", "iso": "us", "names": ["United States", "USA"]}]}
+{
+    "countries": [
+        {
+            "forum": "albania",
+            "flag": "al",
+            "names": [
+                "Albania"
+            ]
+        },
+        {
+            "forum": "armenia",
+            "flag": "am",
+            "names": [
+                "Armenia"
+            ]
+        },
+        {
+            "forum": "australia",
+            "flag": "au",
+            "names": [
+                "Australia"
+            ]
+        },
+        {
+            "forum": "austria",
+            "flag": "at",
+            "names": [
+                "Austria"
+            ]
+        },
+        {
+            "forum": "azerbaijan",
+            "flag": "az",
+            "names": [
+                "Azerbaijan"
+            ]
+        },
+        {
+            "forum": "belarus",
+            "flag": "by",
+            "names": [
+                "Belarus"
+            ]
+        },
+        {
+            "forum": "belgium",
+            "flag": "be",
+            "names": [
+                "Belgium"
+            ]
+        },
+        {
+            "forum": "bosniaherzegovina",
+            "flag": "ba",
+            "names": [
+                "Bosnia & Herzegovina",
+                "Bosnia and Herzegovina",
+                "Bosnia Hercegovina"
+            ]
+        },
+        {
+            "forum": "brazil",
+            "flag": "br",
+            "names": [
+                "Brazil"
+            ]
+        },
+        {
+            "forum": "bulgaria",
+            "flag": "bg",
+            "names": [
+                "Bulgaria"
+            ]
+        },
+        {
+            "forum": "canada",
+            "flag": "ca",
+            "names": [
+                "Canada"
+            ]
+        },
+        {
+            "forum": "china",
+            "flag": "cn",
+            "names": [
+                "China"
+            ]
+        },
+        {
+            "forum": "croatia",
+            "flag": "hr",
+            "names": [
+                "Croatia"
+            ]
+        },
+        {
+            "forum": "cyprus",
+            "flag": "cy",
+            "names": [
+                "Cyprus"
+            ]
+        },
+        {
+            "forum": "czechrepublic",
+            "flag": "dk",
+            "names": [
+                "Czech Republic",
+                "Czechia"
+            ]
+        },
+        {
+            "forum": "denmark",
+            "flag": "ee",
+            "names": [
+                "Denmark"
+            ]
+        },
+        {
+            "forum": "estonia",
+            "flag": "ee",
+            "names": [
+                "Estonia"
+            ]
+        },
+        {
+            "forum": "finland",
+            "flag": "fi",
+            "names": [
+                "Finland"
+            ]
+        },
+        {
+            "forum": "france",
+            "flag": "fr",
+            "names": [
+                "France"
+            ]
+        },
+        {
+            "forum": "georgia",
+            "flag": "ge",
+            "names": [
+                "Georgia"
+            ]
+        },
+        {
+            "forum": "germany",
+            "flag": "de",
+            "names": [
+                "Germany"
+            ]
+        },
+        {
+            "forum": "greece",
+            "flag": "gr",
+            "names": [
+                "Greece"
+            ]
+        },
+        {
+            "forum": "hungary",
+            "flag": "hu",
+            "names": [
+                "Hungary"
+            ]
+        },
+        {
+            "forum": "iceland",
+            "flag": "is",
+            "names": [
+                "Iceland"
+            ]
+        },
+        {
+            "forum": "india",
+            "flag": "in",
+            "names": [
+                "India"
+            ]
+        },
+        {
+            "forum": "ireland",
+            "flag": "ie",
+            "names": [
+                "Ireland"
+            ]
+        },
+        {
+            "forum": "israel",
+            "flag": "il",
+            "names": [
+                "Israel"
+            ]
+        },
+        {
+            "forum": "italy",
+            "flag": "it",
+            "names": [
+                "Italy"
+            ]
+        },
+        {
+            "forum": "kosovo",
+            "flag": "xk",
+            "names": [
+                "Kosovo"
+            ]
+        },
+        {
+            "forum": "latvia",
+            "flag": "lv",
+            "names": [
+                "Latvia"
+            ]
+        },
+        {
+            "forum": "lithuania",
+            "flag": "lt",
+            "names": [
+                "Lithuania"
+            ]
+        },
+        {
+            "forum": "luxembourg",
+            "flag": "lu",
+            "names": [
+                "Luxembourg",
+                "Luxemburg"
+            ]
+        },
+        {
+            "forum": "macedonia",
+            "flag": "mk",
+            "names": [
+                "Macedonia"
+            ]
+        },
+        {
+            "forum": "malta",
+            "flag": "mt",
+            "names": [
+                "Malta"
+            ]
+        },
+        {
+            "forum": "moldova",
+            "flag": "md",
+            "names": [
+                "Moldova"
+            ]
+        },
+        {
+            "forum": "montenegro",
+            "flag": "me",
+            "names": [
+                "Montenegro"
+            ]
+        },
+        {
+            "forum": "newzealand",
+            "flag": "nz",
+            "names": [
+                "New Zealand"
+            ]
+        },
+        {
+            "forum": "norway",
+            "flag": "no",
+            "names": [
+                "Norway"
+            ]
+        },
+        {
+            "forum": "philippines",
+            "flag": "ph",
+            "names": [
+                "Philippines",
+                "The Philippines"
+            ]
+        },
+        {
+            "forum": "poland",
+            "flag": "pl",
+            "names": [
+                "Poland"
+            ]
+        },
+        {
+            "forum": "portugal",
+            "flag": "pt",
+            "names": [
+                "Portugal"
+            ]
+        },
+        {
+            "forum": "romania",
+            "flag": "ro",
+            "names": [
+                "Romania"
+            ]
+        },
+        {
+            "forum": "russia",
+            "flag": "ru",
+            "names": [
+                "Russia"
+            ]
+        },
+        {
+            "forum": "sanmarino",
+            "flag": "sm",
+            "names": [
+                "San Marino"
+            ]
+        },
+        {
+            "forum": "serbia",
+            "flag": "rs",
+            "names": [
+                "Serbia"
+            ]
+        },
+        {
+            "forum": "slovenia",
+            "flag": "si",
+            "names": [
+                "Slovenia"
+            ]
+        },
+        {
+            "forum": "southkorea",
+            "flag": "sk",
+            "names": [
+                "South Korea"
+            ]
+        },
+        {
+            "forum": "spain",
+            "flag": "es",
+            "names": [
+                "Spain"
+            ]
+        },
+        {
+            "forum": "sweden",
+            "flag": "se",
+            "names": [
+                "Sweden"
+            ]
+        },
+        {
+            "forum": "switzerland",
+            "flag": "ch",
+            "names": [
+                "Switzerland"
+            ]
+        },
+        {
+            "forum": "thenetherlands",
+            "flag": "nl",
+            "names": [
+                "The Netherlands",
+                "Netherlands"
+            ]
+        },
+        {
+            "forum": "turkey",
+            "flag": "tk",
+            "names": [
+                "Turkey"
+            ]
+        },
+        {
+            "forum": "ukraine",
+            "flag": "ua",
+            "names": [
+                "Ukraine"
+            ]
+        },
+        {
+            "forum": "unitedkingdom",
+            "flag": "gb",
+            "names": [
+                "United Kingdom",
+                "UK"
+            ]
+        },
+        {
+            "forum": "usa",
+            "flag": "us",
+            "names": [
+                "United States",
+                "USA"
+            ]
+        },
+        {
+            "forum": "yugoslavia",
+            "flag": "yu",
+            "names": [
+                "Yugoslavia"
+            ]
+        }
+    ],
+    "entries": [
+        {
+            "country": {
+                "forum": "albania",
+                "flag": "al",
+                "names": [
+                    "Albania"
+                ]
+            },
+            "flag": "World/al.png",
+            "artist": "Eugent Bushpepa",
+            "song": "Stay With Me Tonight"
+        },
+        {
+            "country": {
+                "forum": "armenia",
+                "flag": "am",
+                "names": [
+                    "Armenia"
+                ]
+            },
+            "flag": "World/am.png",
+            "artist": "John Dolmayan ft. Sirusho",
+            "song": "Hung Up"
+        },
+        {
+            "country": {
+                "forum": "australia",
+                "flag": "au",
+                "names": [
+                    "Australia"
+                ]
+            },
+            "flag": "World/au.png",
+            "artist": "Lenka",
+            "song": "On My Side"
+        },
+        {
+            "country": {
+                "forum": "austria",
+                "flag": "at",
+                "names": [
+                    "Austria"
+                ]
+            },
+            "flag": "World/at.png",
+            "artist": "My Ugly Clementine",
+            "song": "Playground"
+        },
+        {
+            "country": {
+                "forum": "azerbaijan",
+                "flag": "az",
+                "names": [
+                    "Azerbaijan"
+                ]
+            },
+            "flag": "World/az.png",
+            "artist": "R\u00f6ya",
+            "song": "Dedin yox"
+        },
+        {
+            "country": {
+                "forum": "belarus",
+                "flag": "by",
+                "names": [
+                    "Belarus"
+                ]
+            },
+            "flag": "World/by.png",
+            "artist": "Zlata Mai",
+            "song": "Kassiopeya"
+        },
+        {
+            "country": {
+                "forum": "belgium",
+                "flag": "be",
+                "names": [
+                    "Belgium"
+                ]
+            },
+            "flag": "World/be.png",
+            "artist": "Blanche",
+            "song": "Empire"
+        },
+        {
+            "country": {
+                "forum": "bulgaria",
+                "flag": "bg",
+                "names": [
+                    "Bulgaria"
+                ]
+            },
+            "flag": "World/bg.png",
+            "artist": "Denis Teofikov",
+            "song": "Katastrofa"
+        },
+        {
+            "country": {
+                "forum": "china",
+                "flag": "cn",
+                "names": [
+                    "China"
+                ]
+            },
+            "flag": "World/cn.png",
+            "artist": "Mao Buyi",
+            "song": "Wang Jr."
+        },
+        {
+            "country": {
+                "forum": "croatia",
+                "flag": "hr",
+                "names": [
+                    "Croatia"
+                ]
+            },
+            "flag": "World/hr.png",
+            "artist": "\u0110utko",
+            "song": "Terase"
+        },
+        {
+            "country": {
+                "forum": "cyprus",
+                "flag": "cy",
+                "names": [
+                    "Cyprus"
+                ]
+            },
+            "flag": "World/cy.png",
+            "artist": "Valando Tryfonos & Stathis Drogosis",
+            "song": "Amaxi"
+        },
+        {
+            "country": {
+                "forum": "denmark",
+                "flag": "ee",
+                "names": [
+                    "Denmark"
+                ]
+            },
+            "flag": "World/ee.png",
+            "artist": "Agnes Obel",
+            "song": "Island of Doom"
+        },
+        {
+            "country": {
+                "forum": "estonia",
+                "flag": "ee",
+                "names": [
+                    "Estonia"
+                ]
+            },
+            "flag": "World/ee.png",
+            "artist": "Tuulikki Bartosik",
+            "song": "M\u00e4lutaguse polka"
+        },
+        {
+            "country": {
+                "forum": "finland",
+                "flag": "fi",
+                "names": [
+                    "Finland"
+                ]
+            },
+            "flag": "World/fi.png",
+            "artist": "Antti Tuisku",
+            "song": "Jumalan k\u00e4mmenell\u00e4"
+        },
+        {
+            "country": {
+                "forum": "france",
+                "flag": "fr",
+                "names": [
+                    "France"
+                ]
+            },
+            "flag": "World/fr.png",
+            "artist": "Vitaa & Slimane",
+            "song": "\u00c7a va, \u00e7a vient"
+        },
+        {
+            "country": {
+                "forum": "germany",
+                "flag": "de",
+                "names": [
+                    "Germany"
+                ]
+            },
+            "flag": "World/de.png",
+            "artist": "Anica Russo",
+            "song": "REBEL"
+        },
+        {
+            "country": {
+                "forum": "greece",
+                "flag": "gr",
+                "names": [
+                    "Greece"
+                ]
+            },
+            "flag": "World/gr.png",
+            "artist": "Ble",
+            "song": "S'agapisa kryfa"
+        },
+        {
+            "country": {
+                "forum": "iceland",
+                "flag": "is",
+                "names": [
+                    "Iceland"
+                ]
+            },
+            "flag": "World/is.png",
+            "artist": "\u00c1sgeir",
+            "song": "Lazy Giants"
+        },
+        {
+            "country": {
+                "forum": "india",
+                "flag": "in",
+                "names": [
+                    "India"
+                ]
+            },
+            "flag": "World/in.png",
+            "artist": "Anish Sood ft. Lisa Mishra",
+            "song": "Running Back To You"
+        },
+        {
+            "country": {
+                "forum": "ireland",
+                "flag": "ie",
+                "names": [
+                    "Ireland"
+                ]
+            },
+            "flag": "World/ie.png",
+            "artist": "FLAVIA",
+            "song": "Til I Die"
+        },
+        {
+            "country": {
+                "forum": "israel",
+                "flag": "il",
+                "names": [
+                    "Israel"
+                ]
+            },
+            "flag": "World/il.png",
+            "artist": "Nathan Goshen & Ishay Ribo",
+            "song": "Nechake lecha"
+        },
+        {
+            "country": {
+                "forum": "italy",
+                "flag": "it",
+                "names": [
+                    "Italy"
+                ]
+            },
+            "flag": "World/it.png",
+            "artist": "Brunori Sas",
+            "song": "Al di l\u00e0 dell\u2019amore"
+        },
+        {
+            "country": {
+                "forum": "kosovo",
+                "flag": "xk",
+                "names": [
+                    "Kosovo"
+                ]
+            },
+            "flag": "World/xk.png",
+            "artist": "Me T'Njofsh\u00ebm",
+            "song": "Nije"
+        },
+        {
+            "country": {
+                "forum": "lithuania",
+                "flag": "lt",
+                "names": [
+                    "Lithuania"
+                ]
+            },
+            "flag": "World/lt.png",
+            "artist": "IGL\u0116",
+            "song": "Nei\u0161eik, dar pab\u016bk"
+        },
+        {
+            "country": {
+                "forum": "macedonia",
+                "flag": "mk",
+                "names": [
+                    "Macedonia"
+                ]
+            },
+            "flag": "World/mk.png",
+            "artist": "Antonia Gigovska",
+            "song": "Kriva sum"
+        },
+        {
+            "country": {
+                "forum": "montenegro",
+                "flag": "me",
+                "names": [
+                    "Montenegro"
+                ]
+            },
+            "flag": "World/me.png",
+            "artist": "L\u00e8rr",
+            "song": "Aves"
+        },
+        {
+            "country": {
+                "forum": "thenetherlands",
+                "flag": "nl",
+                "names": [
+                    "The Netherlands",
+                    "Netherlands"
+                ]
+            },
+            "flag": "World/nl.png",
+            "artist": "\u00c1slaug",
+            "song": "Take From Me"
+        },
+        {
+            "country": {
+                "forum": "norway",
+                "flag": "no",
+                "names": [
+                    "Norway"
+                ]
+            },
+            "flag": "World/no.png",
+            "artist": "KEiiNO",
+            "song": "Colours"
+        },
+        {
+            "country": {
+                "forum": "philippines",
+                "flag": "ph",
+                "names": [
+                    "Philippines",
+                    "The Philippines"
+                ]
+            },
+            "flag": "World/ph.png",
+            "artist": "IV of Spades",
+            "song": "Ang pinagmulan"
+        },
+        {
+            "country": {
+                "forum": "poland",
+                "flag": "pl",
+                "names": [
+                    "Poland"
+                ]
+            },
+            "flag": "World/pl.png",
+            "artist": "Kasia Lins",
+            "song": "R\u00f3b tak dalej"
+        },
+        {
+            "country": {
+                "forum": "portugal",
+                "flag": "pt",
+                "names": [
+                    "Portugal"
+                ]
+            },
+            "flag": "World/pt.png",
+            "artist": "Claudisabel",
+            "song": "Condenada"
+        },
+        {
+            "country": {
+                "forum": "romania",
+                "flag": "ro",
+                "names": [
+                    "Romania"
+                ]
+            },
+            "flag": "World/ro.png",
+            "artist": "SICKOTOY ft. Roxen",
+            "song": "You Don't Love Me"
+        },
+        {
+            "country": {
+                "forum": "russia",
+                "flag": "ru",
+                "names": [
+                    "Russia"
+                ]
+            },
+            "flag": "World/ru.png",
+            "artist": "Dima Bilan",
+            "song": "Poluno\u010dnoe taksi"
+        },
+        {
+            "country": {
+                "forum": "serbia",
+                "flag": "rs",
+                "names": [
+                    "Serbia"
+                ]
+            },
+            "flag": "World/rs.png",
+            "artist": "Danica Krsti\u0107",
+            "song": "Svatovi"
+        },
+        {
+            "country": {
+                "forum": "slovenia",
+                "flag": "si",
+                "names": [
+                    "Slovenia"
+                ]
+            },
+            "flag": "World/si.png",
+            "artist": "Regen",
+            "song": "Love Me or Don't"
+        },
+        {
+            "country": {
+                "forum": "spain",
+                "flag": "es",
+                "names": [
+                    "Spain"
+                ]
+            },
+            "flag": "World/es.png",
+            "artist": "Dani Martin",
+            "song": "La mentira"
+        },
+        {
+            "country": {
+                "forum": "sweden",
+                "flag": "se",
+                "names": [
+                    "Sweden"
+                ]
+            },
+            "flag": "World/se.png",
+            "artist": "Ingrid Witt",
+            "song": "Slow Decay"
+        },
+        {
+            "country": {
+                "forum": "switzerland",
+                "flag": "ch",
+                "names": [
+                    "Switzerland"
+                ]
+            },
+            "flag": "World/ch.png",
+            "artist": "Marius Bear",
+            "song": "Not Loud Enough"
+        },
+        {
+            "country": {
+                "forum": "turkey",
+                "flag": "tk",
+                "names": [
+                    "Turkey"
+                ]
+            },
+            "flag": "World/tk.png",
+            "artist": "Feride Hilal Ak\u0131n",
+            "song": "Tutku"
+        },
+        {
+            "country": {
+                "forum": "ukraine",
+                "flag": "ua",
+                "names": [
+                    "Ukraine"
+                ]
+            },
+            "flag": "World/ua.png",
+            "artist": "MARUV",
+            "song": "If You Want Her"
+        },
+        {
+            "country": {
+                "forum": "unitedkingdom",
+                "flag": "gb",
+                "names": [
+                    "United Kingdom",
+                    "UK"
+                ]
+            },
+            "flag": "World/gb.png",
+            "artist": "Jessie Ware",
+            "song": "Spotlight"
+        },
+        {
+            "country": {
+                "forum": "usa",
+                "flag": "us",
+                "names": [
+                    "United States",
+                    "USA"
+                ]
+            },
+            "flag": "World/us.png",
+            "artist": "Ian Randall Thornton",
+            "song": "Hiatus"
+        }
+    ],
+    "voters": [
+        {
+            "forum": "albania",
+            "flag": "al",
+            "names": [
+                "Albania"
+            ]
+        },
+        {
+            "forum": "armenia",
+            "flag": "am",
+            "names": [
+                "Armenia"
+            ]
+        },
+        {
+            "forum": "australia",
+            "flag": "au",
+            "names": [
+                "Australia"
+            ]
+        },
+        {
+            "forum": "austria",
+            "flag": "at",
+            "names": [
+                "Austria"
+            ]
+        },
+        {
+            "forum": "azerbaijan",
+            "flag": "az",
+            "names": [
+                "Azerbaijan"
+            ]
+        },
+        {
+            "forum": "belarus",
+            "flag": "by",
+            "names": [
+                "Belarus"
+            ]
+        },
+        {
+            "forum": "belgium",
+            "flag": "be",
+            "names": [
+                "Belgium"
+            ]
+        },
+        {
+            "forum": "bulgaria",
+            "flag": "bg",
+            "names": [
+                "Bulgaria"
+            ]
+        },
+        {
+            "forum": "china",
+            "flag": "cn",
+            "names": [
+                "China"
+            ]
+        },
+        {
+            "forum": "croatia",
+            "flag": "hr",
+            "names": [
+                "Croatia"
+            ]
+        },
+        {
+            "forum": "cyprus",
+            "flag": "cy",
+            "names": [
+                "Cyprus"
+            ]
+        },
+        {
+            "forum": "denmark",
+            "flag": "ee",
+            "names": [
+                "Denmark"
+            ]
+        },
+        {
+            "forum": "estonia",
+            "flag": "ee",
+            "names": [
+                "Estonia"
+            ]
+        },
+        {
+            "forum": "finland",
+            "flag": "fi",
+            "names": [
+                "Finland"
+            ]
+        },
+        {
+            "forum": "france",
+            "flag": "fr",
+            "names": [
+                "France"
+            ]
+        },
+        {
+            "forum": "germany",
+            "flag": "de",
+            "names": [
+                "Germany"
+            ]
+        },
+        {
+            "forum": "greece",
+            "flag": "gr",
+            "names": [
+                "Greece"
+            ]
+        },
+        {
+            "forum": "iceland",
+            "flag": "is",
+            "names": [
+                "Iceland"
+            ]
+        },
+        {
+            "forum": "india",
+            "flag": "in",
+            "names": [
+                "India"
+            ]
+        },
+        {
+            "forum": "ireland",
+            "flag": "ie",
+            "names": [
+                "Ireland"
+            ]
+        },
+        {
+            "forum": "israel",
+            "flag": "il",
+            "names": [
+                "Israel"
+            ]
+        },
+        {
+            "forum": "italy",
+            "flag": "it",
+            "names": [
+                "Italy"
+            ]
+        },
+        {
+            "forum": "kosovo",
+            "flag": "xk",
+            "names": [
+                "Kosovo"
+            ]
+        },
+        {
+            "forum": "lithuania",
+            "flag": "lt",
+            "names": [
+                "Lithuania"
+            ]
+        },
+        {
+            "forum": "macedonia",
+            "flag": "mk",
+            "names": [
+                "Macedonia"
+            ]
+        },
+        {
+            "forum": "montenegro",
+            "flag": "me",
+            "names": [
+                "Montenegro"
+            ]
+        },
+        {
+            "forum": "thenetherlands",
+            "flag": "nl",
+            "names": [
+                "The Netherlands",
+                "Netherlands"
+            ]
+        },
+        {
+            "forum": "norway",
+            "flag": "no",
+            "names": [
+                "Norway"
+            ]
+        },
+        {
+            "forum": "philippines",
+            "flag": "ph",
+            "names": [
+                "Philippines",
+                "The Philippines"
+            ]
+        },
+        {
+            "forum": "poland",
+            "flag": "pl",
+            "names": [
+                "Poland"
+            ]
+        },
+        {
+            "forum": "portugal",
+            "flag": "pt",
+            "names": [
+                "Portugal"
+            ]
+        },
+        {
+            "forum": "romania",
+            "flag": "ro",
+            "names": [
+                "Romania"
+            ]
+        },
+        {
+            "forum": "russia",
+            "flag": "ru",
+            "names": [
+                "Russia"
+            ]
+        },
+        {
+            "forum": "serbia",
+            "flag": "rs",
+            "names": [
+                "Serbia"
+            ]
+        },
+        {
+            "forum": "slovenia",
+            "flag": "si",
+            "names": [
+                "Slovenia"
+            ]
+        },
+        {
+            "forum": "spain",
+            "flag": "es",
+            "names": [
+                "Spain"
+            ]
+        },
+        {
+            "forum": "sweden",
+            "flag": "se",
+            "names": [
+                "Sweden"
+            ]
+        },
+        {
+            "forum": "switzerland",
+            "flag": "ch",
+            "names": [
+                "Switzerland"
+            ]
+        },
+        {
+            "forum": "turkey",
+            "flag": "tk",
+            "names": [
+                "Turkey"
+            ]
+        },
+        {
+            "forum": "ukraine",
+            "flag": "ua",
+            "names": [
+                "Ukraine"
+            ]
+        },
+        {
+            "forum": "unitedkingdom",
+            "flag": "gb",
+            "names": [
+                "United Kingdom",
+                "UK"
+            ]
+        },
+        {
+            "forum": "usa",
+            "flag": "us",
+            "names": [
+                "United States",
+                "USA"
+            ]
+        }
+    ]
+}

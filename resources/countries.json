@@ -2,56 +2,63 @@
   "countries": [
     {
       "forum": "albania",
-      "iso": "al",
+      "flag": "al",
       "names": [
         "Albania"
       ]
     },
     {
       "forum": "armenia",
-      "iso": "am",
+      "flag": "am",
       "names": [
         "Armenia"
       ]
     },
     {
       "forum": "australia",
-      "iso": "au",
+      "flag": "au",
       "names": [
         "Australia"
       ]
     },
     {
       "forum": "austria",
-      "iso": "at",
+      "flag": "at",
       "names": [
         "Austria"
       ]
     },
     {
       "forum": "azerbaijan",
-      "iso": "az",
+      "flag": "az",
       "names": [
         "Azerbaijan"
       ]
     },
     {
       "forum": "belarus",
-      "iso": "by",
+      "flag": "by",
+      "names": [
+        "Belarus"
+      ]
+    },
+    {
+      "forum": "altbelarus",
+      "flag": "by-alt",
       "names": [
         "Belarus"
       ]
     },
     {
       "forum": "belgium",
-      "iso": "be",
+      "flag": "be",
       "names": [
         "Belgium"
       ]
     },
     {
       "forum": "bosniaherzegovina",
-      "iso": "ba",
+      "flag": "ba",
       "names": [
         "Bosnia & Herzegovina",
         "Bosnia and Herzegovina",
@@ -60,49 +67,49 @@
     },
     {
       "forum": "brazil",
-      "iso": "br",
+      "flag": "br",
       "names": [
         "Brazil"
       ]
     },
     {
       "forum": "bulgaria",
-      "iso": "bg",
+      "flag": "bg",
       "names": [
         "Bulgaria"
       ]
     },
     {
       "forum": "canada",
-      "iso": "ca",
+      "flag": "ca",
       "names": [
         "Canada"
       ]
     },
     {
       "forum": "china",
-      "iso": "cn",
+      "flag": "cn",
       "names": [
         "China"
       ]
     },
     {
       "forum": "croatia",
-      "iso": "hr",
+      "flag": "hr",
       "names": [
         "Croatia"
       ]
     },
     {
       "forum": "cyprus",
-      "iso": "cy",
+      "flag": "cy",
       "names": [
         "Cyprus"
       ]
     },
     {
       "forum": "czechrepublic",
-      "iso": "dk",
+      "flag": "dk",
       "names": [
         "Czech Republic",
         "Czechia"
@@ -110,119 +117,119 @@
     },
     {
       "forum": "denmark",
-      "iso": "ee",
+      "flag": "dk",
       "names": [
         "Denmark"
       ]
     },
     {
       "forum": "estonia",
-      "iso": "ee",
+      "flag": "ee",
       "names": [
         "Estonia"
       ]
     },
     {
       "forum": "finland",
-      "iso": "fi",
+      "flag": "fi",
       "names": [
         "Finland"
       ]
     },
     {
       "forum": "france",
-      "iso": "fr",
+      "flag": "fr",
       "names": [
         "France"
       ]
     },
     {
       "forum": "georgia",
-      "iso": "ge",
+      "flag": "ge",
       "names": [
         "Georgia"
       ]
     },
     {
       "forum": "germany",
-      "iso": "de",
+      "flag": "de",
       "names": [
         "Germany"
       ]
     },
     {
       "forum": "greece",
-      "iso": "gr",
+      "flag": "gr",
       "names": [
         "Greece"
       ]
     },
     {
       "forum": "hungary",
-      "iso": "hu",
+      "flag": "hu",
       "names": [
         "Hungary"
       ]
     },
     {
       "forum": "iceland",
-      "iso": "is",
+      "flag": "is",
       "names": [
         "Iceland"
       ]
     },
     {
       "forum": "india",
-      "iso": "in",
+      "flag": "in",
       "names": [
         "India"
       ]
     },
     {
       "forum": "ireland",
-      "iso": "ie",
+      "flag": "ie",
       "names": [
         "Ireland"
       ]
     },
     {
       "forum": "israel",
-      "iso": "il",
+      "flag": "il",
       "names": [
         "Israel"
       ]
     },
     {
       "forum": "italy",
-      "iso": "it",
+      "flag": "it",
       "names": [
         "Italy"
       ]
     },
     {
       "forum": "kosovo",
-      "iso": "xk",
+      "flag": "xk",
       "names": [
         "Kosovo"
       ]
     },
     {
       "forum": "latvia",
-      "iso": "lv",
+      "flag": "lv",
       "names": [
         "Latvia"
       ]
     },
     {
       "forum": "lithuania",
-      "iso": "lt",
+      "flag": "lt",
       "names": [
         "Lithuania"
       ]
     },
     {
       "forum": "luxembourg",
-      "iso": "lu",
+      "flag": "lu",
       "names": [
         "Luxembourg",
         "Luxemburg"
@@ -230,49 +237,57 @@
     },
     {
       "forum": "macedonia",
-      "iso": "mk",
+      "flag": "mk",
       "names": [
-        "Macedonia"
+        "Macedonia",
+        "North Macedonia"
       ]
     },
     {
       "forum": "malta",
-      "iso": "mt",
+      "flag": "mt",
       "names": [
         "Malta"
       ]
     },
     {
+      "forum": "mexico",
+      "flag": "mx",
+      "names": [
+        "Mexico"
+      ]
+    },
+    {
       "forum": "moldova",
-      "iso": "md",
+      "flag": "md",
       "names": [
         "Moldova"
       ]
     },
     {
       "forum": "montenegro",
-      "iso": "me",
+      "flag": "me",
       "names": [
         "Montenegro"
       ]
     },
     {
       "forum": "newzealand",
-      "iso": "nz",
+      "flag": "nz",
       "names": [
         "New Zealand"
       ]
     },
     {
       "forum": "norway",
-      "iso": "no",
+      "flag": "no",
       "names": [
         "Norway"
       ]
     },
     {
       "forum": "philippines",
-      "iso": "ph",
+      "flag": "ph",
       "names": [
         "Philippines",
         "The Philippines"
@@ -280,84 +295,84 @@
     },
     {
       "forum": "poland",
-      "iso": "pl",
+      "flag": "pl",
       "names": [
         "Poland"
       ]
     },
     {
       "forum": "portugal",
-      "iso": "pt",
+      "flag": "pt",
       "names": [
         "Portugal"
       ]
     },
     {
       "forum": "romania",
-      "iso": "ro",
+      "flag": "ro",
       "names": [
         "Romania"
       ]
     },
     {
       "forum": "russia",
-      "iso": "ru",
+      "flag": "ru",
       "names": [
         "Russia"
       ]
     },
     {
       "forum": "sanmarino",
-      "iso": "sm",
+      "flag": "sm",
       "names": [
         "San Marino"
       ]
     },
     {
       "forum": "serbia",
-      "iso": "rs",
+      "flag": "rs",
       "names": [
         "Serbia"
       ]
     },
     {
       "forum": "slovenia",
-      "iso": "si",
+      "flag": "si",
       "names": [
         "Slovenia"
       ]
     },
     {
       "forum": "southkorea",
-      "iso": "sk",
+      "flag": "sk",
       "names": [
         "South Korea"
       ]
     },
     {
       "forum": "spain",
-      "iso": "es",
+      "flag": "es",
       "names": [
         "Spain"
       ]
     },
     {
       "forum": "sweden",
-      "iso": "se",
+      "flag": "se",
       "names": [
         "Sweden"
       ]
     },
     {
       "forum": "switzerland",
-      "iso": "ch",
+      "flag": "ch",
       "names": [
         "Switzerland"
       ]
     },
     {
       "forum": "thenetherlands",
-      "iso": "nl",
+      "flag": "nl",
       "names": [
         "The Netherlands",
         "Netherlands"
@@ -365,29 +380,29 @@
     },
     {
       "forum": "turkey",
-      "iso": "tk",
+      "flag": "tr",
       "names": [
         "Turkey"
       ]
     },
     {
       "forum": "ukraine",
-      "iso": "ua",
+      "flag": "ua",
       "names": [
         "Ukraine"
       ]
     },
     {
       "forum": "unitedkingdom",
-      "iso": "gb",
+      "flag": "gb",
       "names": [
         "United Kingdom",
-        "UK"
+        "UK "
       ]
     },
     {
       "forum": "usa",
-      "iso": "us",
+      "flag": "us",
       "names": [
         "United States",
         "USA"
@@ -395,7 +410,7 @@
     },
     {
       "forum": "yugoslavia",
-      "iso": "yu",
+      "flag": "yu",
       "names": [
         "Yugoslavia"
       ]
