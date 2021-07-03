@@ -13,7 +13,7 @@ description = "Process voters for music competitions"
 icon = "src/ida/resources/ida"
 sources = ['src/ida']
 requires = [
-    'pyside2==5.13.0',]
+    'pyside6==6.0.0',]
 
 
 [tool.briefcase.app.ida.macOS]

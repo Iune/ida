@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.4
+Name: ida
+Formal-Name: Ida
+App-ID: org.iune.ida
+Version: 0.0.1
+Home-page: https://github.com/Iune/ida
+Author: Aditya Duri
+Author-email: aditya.duri@gmail.com
+Summary: Process voters for music competitions
