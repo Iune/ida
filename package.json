@@ -1,15 +1,15 @@
 {
   "name": "ida",
   "version": "0.4.0",
-  "description": "Contest management utility",
-  "main": "src/index.js",
+  "description": "Online music contest management utility",
+  "main": "src/index.ts",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .ts"
   },
   "author": "Aditya Duri <aditya.duri@gmail.com>",
-  "license": "MIT",
+  "license": "BSD 3-CLAUSE",
   "devDependencies": {
     "@types/node": "^16.0.0",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
