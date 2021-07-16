@@ -13,3 +13,8 @@ export function loadTextLines(path: string): string[] {
         .split('\n')
         .map(line => line.trim());
 }
+
+// https://stackoverflow.com/a/46700791
+export function notEmpty<T>(value: T | null | undefined): value is T {
+    return value !== null && value !== undefined;
+}
