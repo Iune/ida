@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ida"
+version = "0.4.0"
+description = "Process voters for music competitions"
+authors = ["Aditya Duri <aditya.duri@gmail.com>"]
+license = "BSD-3-Clause"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.4.0"
+pyperclip = "^1.8.2"
+tabulate = "^0.8.9"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+pytest = "^6.2.5"
+
+[tool.poetry.scripts]
+ida = "ida.ida:run"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
