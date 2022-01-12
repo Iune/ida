@@ -73,7 +73,7 @@ class Parser:
         def check_for_duplicate_votes() -> Optional[str]:
             vote_entries = {vote.entry for vote in votes}
             if len(votes) != len(vote_entries):
-                return "At least one entry received poitns more than once"
+                return "At least one entry received points more than once"
             return None
 
         def check_for_points_total() -> Optional[str]:
