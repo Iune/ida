@@ -77,7 +77,8 @@ class Parser:
             return None
 
         def check_for_points_total() -> Optional[str]:
-            if points_total := sum([vote.points for vote in votes]) != 58:
+            points_total = sum([vote.points for vote in votes])
+            if points_total != 58:
                 return f"Total number of points was not 58: {points_total}"
             return None
 
@@ -93,11 +94,7 @@ class Parser:
         def get_vote_string(entry: Entry) -> str:
             def get_entry_string() -> str:
                 vote = next(
-                    (
-                        vote
-                        for vote in votes.votes
-                        if vote.entry.country == entry.country
-                    ),
+                    (vote for vote in votes.votes if vote.entry == entry),
                     None,
                 )
 
