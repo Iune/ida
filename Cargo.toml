@@ -1,8 +1,15 @@
 [package]
 name = "ida"
 version = "0.5.0"
+authors = ["Aditya Duri <aditya.duri@gmail.com>"]
 edition = "2021"
+homepage = "https://github.com/Iune/ida"
+repository = "https://github.com/Iune/ida"
+readme = "README.md"
 license = "BSD-3-Clause"
 
 [dependencies]
 clap = { version = "4.5.26", features = ["derive"] }
+csv = "1.3.1"
+serde = { version = "1.0.217", features = ["derive"] }
+thiserror = "2.0.11"
