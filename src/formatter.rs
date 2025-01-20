@@ -55,6 +55,17 @@ impl Entry {
     pub fn points(&self, num_digits: usize) -> String {
         format!("{:0zfill$}", self.points, zfill = num_digits)
     }
+
+    pub fn format(&self, num_digits: usize) -> String {
+        format!(
+            "{} | :{}: [B]{}:[/B] {} - {}",
+            self.points(num_digits),
+            self.flag_icon(),
+            self.country,
+            self.artist,
+            self.song
+        )
+    }
 }
 
 pub fn format_results(file: PathBuf, file_format: String, num_digits: usize) {
@@ -70,7 +81,7 @@ pub fn format_results(file: PathBuf, file_format: String, num_digits: usize) {
     };
 
     for entry in entries {
-        println!("{}", format_entry(&entry, num_digits))
+        println!("{}", &entry.format(num_digits))
     }
 }
 
@@ -89,15 +100,4 @@ fn parse_delimited_file(file: PathBuf, delimiter: u8) -> Vec<Entry> {
         }
     }
     entries
-}
-
-fn format_entry(entry: &Entry, num_digits: usize) -> String {
-    format!(
-        "{} | :{}: [B]{}:[/B] {} - {}",
-        entry.points(num_digits),
-        entry.flag_icon(),
-        entry.country,
-        entry.artist,
-        entry.song
-    )
 }
