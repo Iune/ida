@@ -1,16 +1,13 @@
 # Ida
 
-Ida is a voting assistant to help process voters for online music competitions. It is designed to work with contest
+Ida is an assistant to help hosts for online music competitions. It is designed to work with contest
 files for [Melbourne](https://github.com/Iune/melbourne).
 
-## Usage
+## Rust Re-Write Roadmap
 
-```
-Usage: ida [OPTIONS] CONTEST_FILE
-
-Arguments:
-  CONTEST_FILE  [required]
-
-Options:
-  --help                          Show this message and exit.
-```
+* [ ] Formatter
+  * [X] Handle `csv` files
+  * [X] Handle `tsv` files
+  * [ ] Handle `xlsx` files
+* [ ] Spreadsheet
+* [ ] Votes Parsing
